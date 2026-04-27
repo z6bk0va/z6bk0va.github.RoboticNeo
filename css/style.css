@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Montserrat', sans-serif;
+background-color: rgb(220, 233, 228);
+padding: 0;
+margin: 0;
+}
+
+nav a {
+margin-right: 10px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------ШАПКА------------------------ */
+.shapka {
+    display: flex;
+    background-color: rgb(5, 5, 5);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap; /* ВАЖНО */
+
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+
+  position: sticky;
+  top: 0;           /* Прижать к самому верху */
+  z-index: 1000; 
+}
+
+.SHRobo-name {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 2px;
+    color: rgb(69, 129, 109);
+}
+
+.SHMenu {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.SHVariable {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.SHVariable:hover {
+    color: rgb(144, 189, 175);
+}
+
+@media (max-width: 768px) {
+
+    .shapka {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SHMenu {
+        justify-content: center;
+    }
+
+}
+
+/* ------------------------ПОДВАЛ------------------------ */
+/* Общие стили для футера */
+.footer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #000000; /* Белый фон */
+}
+
+/* Контейнер для центрирования */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* Текст слева, ссылки справа */
+  align-items: center;
+}
+
+/* Текст копирайта */
+.copyright {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Навигация в футере */
+.footer-nav {
+  display: flex;
+  gap: 25px; /* Расстояние между ссылками */
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #d1d1d1;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+/* Эффект при наведении */
+.footer-nav a:hover {
+  color: rgb(144, 189, 175); /* Акцентный цвет */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,149 @@
+/* ------------------------БЛОК 1------------------------ */
+.Ablock1 {
+    padding: 60px 20px;
+    color: rgb(41, 41, 41);
+}
+
+.Acontainer1 {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.Ablock1 h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    width: min-content;
+    white-space: nowrap;
+}
+
+.Asubtitle {
+    color: rgb(69, 129, 109);
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.Ab1-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.Ab1-contentTXT {
+    flex: 1;
+    min-width: 280px;
+}
+
+.Ab1-contentTXT p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.Ab1-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 200px;
+
+    margin-top: -170px;
+}
+
+.Ab1-stat {
+    background: rgb(175, 201, 190);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+
+.Ab1-stat h3 {
+    font-size: 28px;
+    color: rgb(69, 129, 109);
+    margin-bottom: 5px;
+}
+
+.Ab1-stat p {
+    color: rgb(249, 255, 253);
+}
+
+/* ------------------------БЛОК 2------------------------ */
+.about-tech {
+    padding: 1px 20px 60px;
+
+    background-image: url(../img/block2.png);
+    background-repeat: no-repeat;
+    background-size: contain; /* Картинка сжимается, чтобы влезть целиком */
+    background-position: top right;
+    background-size: 100% 100%;
+}
+
+.tech-card {
+    margin: 1px 200px 30px;
+    padding: 25px;
+    border-radius: 16px;
+    background: rgb(175, 201, 190);
+    transition: 0.3s;
+
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-tech h2 {
+    font-size: 28px;
+    margin: 10px 200px 60px;
+}
+
+.about-tech h3 {
+    color: rgb(69, 129, 109);;
+}
+
+/* ------------------------БЛОК 3------------------------ */
+.about-gallery {
+    padding: 60px 20px;
+
+    background-color: rgb(69, 129, 109);
+
+    background-image: url(../img/block3.png);
+    background-repeat: no-repeat;
+    background-size: contain; /* Картинка сжимается, чтобы влезть целиком */
+    background-position: top right;
+    background-size: 100% 100%;
+}
+
+.Agallery-img {
+    column-count: 3;
+    column-gap: 15px;
+}
+
+.Agallery-img img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+
+    box-shadow: 0 10px 6px rgba(0,0,0,0.2);
+}
+
+.Agallery-img img:hover {
+    transform: scale(1.05);
+}
+
+.about-gallery h2 {
+    font-size: 28px;
+    margin: 10px 200px 60px;
+}
+
+@media (max-width: 900px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .masonry {
+        column-count: 1;
+    }
+}

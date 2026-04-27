@@ -1,0 +1,119 @@
+/* ------------------------ТАБЛИЦА------------------------ */
+
+.Tinfo {
+    margin-top: 40px;
+
+    border-collapse: collapse;
+    width: 600px;
+    font-family: sans-serif;
+}
+
+.Tinfo td {
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 15px;
+    border-bottom: 1px solid rgb(69, 129, 109);
+}
+
+.Tinfo td:first-child {
+    font-weight: bold;
+    color: rgb(144, 189, 175);
+}
+
+.Tinfo td:last-child {
+    text-align: right;
+    color: #333;
+}
+
+/* ------------------------КАРТОЧКА------------------------ */
+.CALL {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.CnameRobo-line {
+    z-index: 1;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(144, 189, 175);
+}
+
+.CnameRobo {
+    margin: 5px;
+    margin-left: 30px;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+.CRoboIMG-row {
+    z-index: 2;
+    background-color: rgb(69, 129, 109);
+    position: relative;
+    width: 350px;
+    height: 700px;
+}
+
+.CRoboIMG {
+    position: absolute;
+    display: flex;
+
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+
+    right: 40px;
+}
+
+.CRoboInfo-row {
+    margin-left: 30px;
+}
+
+.Crobo-about {
+    margin-top: 100px;
+    font-size: 1.2rem;
+}
+
+.CRoboInfo-row h3 {
+    color: rgb(69, 129, 109);
+    font-size: 1.8rem;
+    margin-left: 460px;
+    margin-top: 50px;
+}
+
+/* ------------------------КНОПОЧКА------------------------ */
+
+.CButton-back {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(144, 189, 175);
+    color: rgb(236, 255, 249); /* Цвет текста */
+    border: 1px solid rgb(144, 189, 175);
+    border-radius: 8px; /* Закругленные углы */
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Плавный переход */
+    text-decoration: none;
+
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+}
+
+/* Эффект при наведении */
+.CButton-back:hover {
+    background-color: rgb(69, 129, 109);
+    color: white;
+    border-color: rgb(46, 85, 72);
+    transform: translateX(-5px); /* Кнопка слегка сдвигается влево */
+}
+
+/* Стили для стрелочки */
+.CButton-back span {
+    margin-right: 8px;
+    font-size: 18px;
+}
